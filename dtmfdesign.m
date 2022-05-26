@@ -20,7 +20,7 @@ bb = cos(2*DesiredFreq*pi.*[0:L-1]).*ones(1,L);
 ll  = max(freekz(bb,1,omega));
 %NFinal = (1/ll).*freqz(bb,1,omega);
 Final  = (1/ll).*bb;
-hh(1:L,i) = Final;
+hh(1:L,i) = abs(Final);
 
 %plot(omega/pi , abs(NFinal))
 
