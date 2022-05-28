@@ -15,7 +15,7 @@ xx = xx*(2/max(abs(xx))); %--Scale the input x[n] to the range [-2,+2]
 sc = zeros(1,8);
 for i = 1:8
      dummy = (conv(xx,hh(1:end,i)));
-     max(abs(dummy))
+     %max(abs(dummy))
      plot(1:length(dummy),dummy);
      %%hold on
      if (max(dummy)) > 0.59
